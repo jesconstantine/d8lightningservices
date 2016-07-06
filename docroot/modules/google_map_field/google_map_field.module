@@ -1,0 +1,15 @@
+<?php
+
+function google_map_field_theme($existing, $type, $theme, $path) {
+  return array(
+    'google_map_field' => array(
+      'variables' => array(
+        'name' => NULL,
+        'lat' => NULL,
+        'lon' => NULL,
+        'zoom' => NULL,
+      ),
+     'template' => 'google_map_field',
+    ),
+  );
+}
